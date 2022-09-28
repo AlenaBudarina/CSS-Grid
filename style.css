@@ -1,0 +1,90 @@
+.header {
+    background-color: lightgray;
+    padding: 10px;
+    grid-area: hd;
+}
+
+.main {
+    background-color: lemonchiffon;
+    padding: 10px;
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    grid-template-areas:
+        "sec1 sec1"
+        "sec2 sec3"
+        "sec4 sec4";
+}
+
+.aside {
+    background-color: lightgreen;
+    padding: 10px;
+    grid-area: as;
+}
+
+.footer {
+    background-color: lightgray;
+    padding: 10px;
+    grid-area: ft;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    grid-template-areas:
+        "ter1 ter2 ter3 ter4";
+}
+
+.container {
+    height: 80vh;
+    display: grid;
+    text-align: center;
+    font-size: 22px;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: 15% 1fr 20%;
+    grid-template-areas:
+        "hd hd hd hd hd hd hd hd hd"
+        "main main main main main main as as as"
+        "ft ft ft ft ft ft ft ft ft";
+}
+
+.section {
+    background-color: rgb(223, 126, 71);
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.section1 {
+    grid-area: sec1;
+}
+
+.section2 {
+    grid-area: sec2;
+}
+
+.section3 {
+    grid-area: sec3;
+}
+
+.section4 {
+    grid-area: sec4;
+}
+
+.foo {
+    background-color: lavenderblush;
+    padding: 15px;
+}
+
+.ter1 {
+    grid-area: ter1;
+}
+
+.ter2 {
+    grid-area: ter2;
+}
+
+.ter3 {
+    grid-area: ter3;
+}
+
+.ter4 {
+    grid-area: ter4;
+}
